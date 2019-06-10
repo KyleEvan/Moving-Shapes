@@ -64,9 +64,9 @@ module.exports = {
       }),
       new ExtractTextPlugin("styles_bundle.css"), // extract css to a separate file called styles.css
       new WriteFilePlugin(),
-      new CopyWebpackPlugin([
-        { from: 'src/php', to: 'php' }
-      ])
+      // new CopyWebpackPlugin([
+      //   { from: 'src/php', to: 'php' }
+      // ])
 
   ],
   devServer: {  // configuration for webpack-dev-server
