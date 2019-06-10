@@ -12,8 +12,9 @@ Color Palette
   https://coolors.co/85e5e0-ffa69e-ffeb93-7b8a96-ffe5e5
 */
 const colors = [
-  '#ACE7E3', '#FFC6C1', '#FFF2BA'
-  // '#F9FFF9' '#63676c' '#FFA69E'
+  '#B8EBF7', '#D1CEF1', '#E6BED2', '#F1C4CB'
+  // '#ACE7E3', '#FFC6C1', '#FFF2BA'
+  // '#F9FFF9', '#63676c', '#FFA69E'
 ];
 
 
@@ -186,15 +187,15 @@ class Scene { // #scene
       showShapes: function(targets){
         for(let i = 0; i < targets.length; i++){
           let target = targets[i];
-          this.tl.to(target, .9, {
+          this.tl.to(target, 1.2, {
             opacity: .75,
             x: getRandomInt(this.scene.bounds.left, this.scene.bounds.right),
             y: getRandomInt(this.scene.bounds.top, this.scene.bounds.bottom),
             scale: 1,
-            onComplete: console.log("fukcing completed showing shapes bich"),
             ease: Expo.easeOut
-          }, "-=.89");
+          }, "-=1.19");
           if(i == (targets.length - 1)) {
+            console.log('completed');
             let scene = this.scene;
             setTimeout(function(){
               scene.animationCompleted();

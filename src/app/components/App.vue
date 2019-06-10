@@ -1,12 +1,12 @@
 <template>
   <div id="app">
 
-    <top-nav></top-nav>
+    <!-- <top-nav></top-nav> -->
 
     <!-- Top navigation -->
 
     <!-- Main website content -->
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
 
 
     <!-- Background shapes scene -->
