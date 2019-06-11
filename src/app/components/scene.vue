@@ -66,7 +66,7 @@ Styles/SCSS
     }
     #name {
         // color: #FF9A91;
-        color: #7B8A96;
+        // color: #7A6563;
         margin: 0;
         font-size: 50px;
         text-transform: uppercase;
