@@ -591,6 +591,7 @@ Bx = Ax*(Bz/Az)
       let matrix = this.el.getAttribute("transform");
       console.log(matrix);
       // let matrixCopy = matrix.replace(/^\w+\(/,"[").replace(/\)$/,"]");
+      if(!matrix) return;
       let matrixCopy = matrix.replace(/^\w*\(/, '').replace(')', '');
       let matrixValue = [];
       matrixValue = matrixCopy.split(/[ ,]+/).map(Number);
